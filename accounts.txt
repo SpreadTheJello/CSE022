@@ -1,0 +1,6 @@
+{"username": "angelo", "password": "1234"}
+{"username": "ucmerced", "password": "bobcats"}
+{"username": "Brian", "password": "brian"}
+{"username": "ggonzalezaraujo", "password": "abc123"}
+{"username": "joemamma", "password": "123"}
+{"username": "Jerome", "password": "Jerome"}

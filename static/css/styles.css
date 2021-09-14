@@ -1,0 +1,76 @@
+.hidden {
+	display: none;
+}
+
+.checked {	
+  color: orange;
+}
+
+.pole{
+	position:absolute;
+	top: 25px;
+	left: 150px;
+	height: 400px;
+}
+
+.head{
+	position:absolute;
+	top: 90px;
+	left: 290px;
+	height: 100px;
+}
+
+.body{
+	position:absolute;
+	top: 170px;
+	left: 320px;
+	height: 100px;
+}
+
+.left_arm{
+	position:absolute;
+	top: 140px;
+	left: 260px;
+	height: 100px;
+}
+
+.right_arm{
+	position:absolute;
+	top: 150px;
+	left: 325px;
+	height: 100px;
+}
+
+.left_leg{
+	position:absolute;
+	top: 250px;
+	left: 290px;
+	height: 100px;
+}
+
+.right_leg{
+	position:absolute;
+	top: 250px;
+	left: 320px;
+	height: 100px;
+}
+
+.lose{
+	position:absolute;
+	top: 50px;
+	left: 10px;
+	height: 90px;
+}
+
+.win{
+	position:absolute;
+	top: 50px;
+	left: 3px;
+	height: 90px;
+}
+
+.spaceside{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 24px;
+}

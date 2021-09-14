@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Library</title>
+
+    <link rel="stylesheet" href="static/bootstrap/bootstrap.min.css">
+    <script src="static/jquery/jquery.js"></script>
+    <script src="static/bootstrap/bootstrap.min.js"></script>
+    <script src="static/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class="navbar-brand" href="#">Book</a>
+
+	<!-- Toggler/collapsibe Button -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="/">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">About</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/projects">Projects</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/game">Game</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/comments">Comment</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="#">Book</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/accounts">Create an Account</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/addressbook">Address Book</a>
+		</li>
+		</ul>
+	</div> 
+	</nav>
+
+	<div class="jumbotron text-center">
+		<h2>Space Bat</h2>
+		<h4>by Carl Selwyn</h4>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<style>
+			h4 {text-align: center;}
+			</style>
+			
+			<div class="col-sm-4">
+				<p>Subject: Science Fiction (English)</p>
+				<p id="word_count">Word count: </p>
+				<p id="most_frequent_word"></p>
+				<p id="longest">Longest word: </p>
+				<p id="shortest">Shortest word: </p>
+				
+				<button id="book_btn" class="btn btn-success">Read</button>
+				<button id="book_btn2" class="btn btn-danger hidden">Close</button>
+				<br><br><br><br>
+				<div id="book_img2" class="hidden">
+				<center><img src="static/images/illus2.jpg" style="width:300px;height200px;" alt="image2"></center>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<textarea id="book" readonly rows="20" class="form-control hidden"></textarea>
+				<br><br>
+				<div id="book_img1" class="hidden">
+				<center><img src="static/images/illus1.jpg" style="width:400px;height200px;" alt="image1"></center>
+    			<center><p><i>Flint threw his weight on the control lever.</i></p></center>
+				</div>
+				<br><br><br><br>
+			</div>
+			
+
+		</div>
+	</div>
+</body>
+
+</html>

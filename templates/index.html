@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/bootstrap/bootstrap.min.css">
+    <script src="static/jquery/jquery.js"></script>
+    <script src="static/bootstrap/bootstrap.min.js"></script>
+    <script src="static/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class="navbar-brand" href="#">Angelo Fatali</a>
+
+	<!-- Toggler/collapsibe Button -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link active" href="#">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/about">About</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/projects">Projects</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/game">Game</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/comments">Comment</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/book">Book</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/accounts">Create an Account</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/addressbook">Address Book</a>
+		</li>
+		</ul>
+	</div> 
+	</nav>
+
+	<div class="jumbotron text-center">
+		<h1>Welcome to my page!</h1>
+		<img src="/static/images/IMG_0357.jpg" style="width:200px;height121px;" class="img-fluid" alt="Me">
+		<img src="/static/images/IMG_0772.jpg" style="width:200px;height121px;" class="img-fluid" alt="Me">
+		<img src="/static/images/IMG_1107.jpg" style="width:200px;height121px;" class="img-fluid" alt="Me">
+		<img src="/static/images/IMG_1025.jpg" style="width:200px;height121px;" class="img-fluid" alt="Me">
+		<img src="/static/images/IMG_1828.jpg" style="width:200px;height121px;" class="img-fluid" alt="Me">
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<p><center><img src="/static/images/giphy.gif" style="width:200px;height121px;"alt="Me"></center></p>
+			</div>
+			<div class="col-sm-4">
+				<h3><center>My name is Angelo Fatali</center></h3>
+				
+				<p><center>This is my page, feel free to take a look around!</center></p>
+				<ul>
+					<li><p>Check out my <a href="/about">about</a> page!</li>
+					<li><p>Take a look at the <a href="/projects">projects</a> I have made!</li>
+					<li><p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">Click</a> for a suprise!</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<p><center><img src="/static/images/giphy.gif" style="width:200px;height121px;" alt="Me"></center></p>	
+			</div>
+		</div>
+		<div id="login_required" class="row hidden">
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+				<center><h4>Rate my website!</h4></center>
+				<center><span class = ""><button id="star1" class="btn btn-secondary">☆</button></span> 
+				<span class = ""><button id="star2" class="btn btn-secondary">☆</button></span> 
+				<span class = ""><button id="star3" class="btn btn-secondary">☆</button></span> 
+				<span class = ""><button id="star4" class="btn btn-secondary">☆</button></span> 
+				<span class = ""><button id="star5" class="btn btn-secondary">☆</button></span></center>
+				<br><br><br><br><br><br><br><br>
+			</div>
+			<div class="col-sm-4">	
+			</div>
+		</div>
+		<div id="login_area" class="row">
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+				<p></p>
+				<center><h5>Login to leave feedback!</h5></center>
+				<p></p>
+				<input id="username" placeholder="Username" class="form-control">
+				<p></p>
+				<input id="password" placeholder="Password" type="password" class="form-control">
+				<p></p>
+				<center><button id="login_btn" class="btn btn-primary">Sign in</button></center>
+				<br></br>				
+			</div>
+			<div class="col-sm-4">
+				<div id="invalid_login" class="hidden">
+					<br></br>
+					<h6 style="color:Red;">Incorrect Login</h6>
+					<p style="color:Tomato;">Please try again</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

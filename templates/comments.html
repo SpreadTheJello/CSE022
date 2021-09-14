@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Comments Page</title>
+
+    <link rel="stylesheet" href="static/bootstrap/bootstrap.min.css">
+    <script src="static/jquery/jquery.js"></script>
+    <script src="static/bootstrap/bootstrap.min.js"></script>
+    <script src="static/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class="navbar-brand" href="#">Comments</a>
+
+	<!-- Toggler/collapsibe Button -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="/">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/about">About</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/projects">Projects</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/game">Game</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="#">Comments</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/book">Book</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/accounts">Create an Account</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/addressbook">Address Book</a>
+		</li>
+		</ul>
+	</div> 
+	</nav>
+
+	<div class="jumbotron text-center">
+		<h2>Comments</h2>
+		<h6>Leave me a comment below!</h6>
+	</div>
+
+	<div class="container">
+		<div id="comments" class="row">
+			<div class="col-sm-6">
+				<h4>Add a comment: </h4>
+				<p></p>
+				<input id="inputname" placeholder="Name" class="form-control">
+				<p></p>
+				<input id="inputmessage" placeholder="Comment" class="form-control">
+				<p></p>
+				<button id="comment_btn" class="btn btn-success">Submit</button>
+				<br><br>
+		</div>
+		<div class="col-sm-6">
+			<h5 id="comment_num">Latest Comments:</h5>
+			<br>
+			<div id="comment_section">
+			</div>
+		</div>
+		
+	</div>
+</body>
+
+</html>

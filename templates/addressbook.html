@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Address Book</title>
+
+    <link rel="stylesheet" href="static/bootstrap/bootstrap.min.css">
+    <script src="static/jquery/jquery.js"></script>
+    <script src="static/bootstrap/bootstrap.min.js"></script>
+    <script src="static/contacts.js"></script>
+	<script src="static/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class="navbar-brand" href="#">Address Book</a>
+
+	<!-- Toggler/collapsibe Button -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="/">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/about">About</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/projects">Projects</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/game">Game</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/comments">Comment</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/book">Book</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/accounts">Create an Account</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="#">Address Book</a>
+		</li>
+		</ul>
+	</div> 
+	</nav>
+
+	<div class="jumbotron text-center">
+		<h2>Address Book</h2>
+		<p id="login_area2">(An account is required to view)</p>
+		<div id="login_required2" class="container hidden">
+			<div class="row">
+				<div class="col-sm-4">
+				</div>
+				<div class="col-sm-4">
+					<input id="searchbox" class="form-control" placeholder="Search here"></input>
+				</div>
+				<div class="col-sm-4">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="login_area" class="row">
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+				<p></p>
+				<center><h5>Login to view and search the Address Book!</h5></center>
+				<p></p>
+				<input id="username" placeholder="Username" class="form-control">
+				<p></p>
+				<input id="password" placeholder="Password" type="password" class="form-control">
+				<p></p>
+				<center><button id="login_btn" class="btn btn-primary">Sign in</button></center>
+				<br></br>				
+			</div>
+			<div class="col-sm-4">
+				<div id="invalid_login" class="hidden">
+					<br></br>
+					<h6 style="color:Red;">Incorrect Login</h6>
+					<p style="color:Tomato;">Please try again</p>
+				</div>
+			</div>
+	</div>
+
+	<div id="login_required" class="container hidden">
+		<h6>Enter your details to be added! (optional)</h6>
+		<div class="row form-group">
+			<div class="col-sm-3">
+				<div id="first_name_fail" class="hidden text-danger">* required</div><input id="first_name" class="form-control" placeholder="First Name"></input>
+			</div>
+			<div class="col-sm-3">
+				<div id="last_name_fail" class="hidden text-danger">* required</div><input id="last_name" class="form-control" placeholder="Last Name"></input>
+			</div>
+			<div class="col-sm-4">
+				<div id="email_fail" class="hidden text-danger">* required</div><input id="email" class="form-control" placeholder="Email"></input>
+			</div>
+			<div class="col-sm-2">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-sm-4">
+				<div id="address_fail" class="hidden text-danger">* required</div><input id="address" class="form-control" placeholder="Address"></input>
+			</div>
+			<div class="col-sm-2">
+				<div id="city_fail" class="hidden text-danger">* required</div><input id="city" class="form-control" placeholder="City"></input>
+			</div>
+			<div class="col-sm-2">
+				<div id="state_fail" class="hidden text-danger">* required</div><input id="state" class="form-control" placeholder="State"></input>
+			</div>
+			<div class="col-sm-2">
+				<div id="zipcode_fail" class="hidden text-danger">* required</div><input id="zipcode" class="form-control" placeholder="Zip"></input>
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-sm-3">
+				<div id="phone_fail" class="hidden text-danger">* required</div><input id="phone" class="form-control" placeholder="Phone Number"></input>
+			</div>
+			<div class="col-sm-3">
+				<div id="phone1_fail" class="hidden text-danger">* required</div><input id="phone1" class="form-control" placeholder="2nd Phone Number"></input>
+			</div>
+			<div class="col-sm-2">
+				<button id="add_contact_btn" class="btn btn-primary">Add Contact</button>
+			</div>
+			<div id="contact_confirmation"class="col-sm-3 hidden">
+				<p><span style="color: #008000">Added!</span> (You may need to refresh to see added contact)</p>
+			</div>
+		</div>
+		<table class="table table-striped table-bordered table-hover table-sm">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First</th>
+					<th>Last</th>
+					<th>Address</th>
+					<th>City</th>
+					<th>Email</th>
+					<th colspan="2">Phone #'s</th>
+					<th>State</th>
+					<th>Zip</th>
+				</tr>
+			</thead>
+			<tbody id="addressbook">
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>

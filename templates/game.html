@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Game</title>
+
+    <link rel="stylesheet" href="static/bootstrap/bootstrap.min.css">
+    <script src="static/jquery/jquery.js"></script>
+    <script src="static/bootstrap/bootstrap.min.js"></script>
+    <script src="static/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class="navbar-brand" href="#">Hangman</a>
+
+	<!-- Toggler/collapsibe Button -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="/">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/about">About</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/projects">Projects</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="#">Game</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/comments">Comment</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/book">Book</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/accounts">Create an Account</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/addressbook">Address Book</a>
+		</li>
+		</ul>
+	</div> 
+	</nav>
+
+	<div id="jtron" class="jumbotron text-center">
+		<h2><center>Hangman Game</center></h2>
+		<h6><center>Category: Computers</center></h6>
+		<br>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<p id="lose_msg">
+				<p id="win_msg">
+				<input id="input_guess" placeholder="Type letter here" class="form-control">
+				<p></p>
+				<p id="wrongGuesses">Wrong letters: </p>
+				<button id="guess_btn" class="btn btn-success">Check</button>
+				<img id="lost_img" src="/static/images/crying.png" class="lose hidden">
+				<img id="win_img" src="/static/images/happy.png" class="win hidden">
+				<br><br><br><br>
+				<button id="reload_btn" class="btn btn-primary hidden">Play Again</button>
+				<p></p>
+				<p id = "win_link" class = "hidden">Here's your <a href="https://www.youtube.com/watch?v=f5KyMNDJE6o&ab_channel=GregZavitz">prize</a>!</p>
+			</div>
+			<div class="col-sm-6">
+				<p></p>
+				<img src="/static/images/pole.png" class="pole">
+				<img src="/static/images/head.png" class="head hidden" id="head">
+				<img src="/static/images/body.png" class="body hidden" id="body">
+				<img src="/static/images/left-arm.png" class="left_arm hidden" id="left-arm">
+				<img src="/static/images/right-arm.png" class="right_arm hidden" id="right-arm">
+				<img src="/static/images/left-leg.png" class="left_leg hidden" id="left-leg">
+				<img src="/static/images/right-leg.png" class="right_leg hidden" id="right-leg">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
